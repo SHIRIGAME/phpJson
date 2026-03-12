@@ -4,13 +4,14 @@
    public $nome;
    public $unid;
    public $saldoEstoque;
- }
+ 
 public function __construct($codProd,$nome,$unid,$saldoEstoque){
-  $this -> codProd = $codprod;
+  $this -> codProd = $codProd;
   $this -> nome = $nome;
   $this -> unid = $unid; 
-  $this -> saldoEstoque = $saldoestoque
-
+  $this -> saldoEstoque = $saldoEstoque;
+}
+   
 public function entrada ($quantidade){
    $this -> saldoEstoque += $quantidade;
 }
@@ -21,9 +22,13 @@ public function saida ($quantidade){
   else{
     echo "Saldo Insuficiente! ";
   }
+}
 
- public class Array (){
+ public function toArray (){
   return [
-   "CodProd" = > $this -> $codprod,
-  ]
+   "codProd" =>$this->codProd,
+   "nome" =>$this->nome,
+   "unid" =>$this->unid,
+   "saldoEstoque" =>$this->saldoEstoque
+  ];
   }
