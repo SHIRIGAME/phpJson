@@ -21,4 +21,9 @@ public function saida ($quantidade){
   else{
     echo "Saldo Insuficiente! ";
   }
-      
+
+ public class Array (){
+  return [
+   "CodProd" = > $this -> $codprod,
+  ]
+  }
